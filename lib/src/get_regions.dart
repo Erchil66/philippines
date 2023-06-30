@@ -5,14 +5,17 @@ import 'constants/regions.dart';
 
 /// Returns a `List` of `Region` objects.
 /// usage: `List<Region> regions = getRegions();`
-/// 
+///
 List<Region> getRegions() {
   List<Region> regions = [];
 
   final json = jsonDecode(regionsJson);
-  json.forEach((region) {
+  // json.forEach((region) {
+
+  // });
+  for (var region in json) {
     regions.add(Region.fromJson(region));
-  });
+  }
 
   return regions;
 }

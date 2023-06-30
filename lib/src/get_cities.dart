@@ -10,9 +10,12 @@ List<City> getCities() {
   List<City> cities = [];
 
   final json = jsonDecode(citiesJson);
-  json.forEach((city) {
+  // json.forEach((city) {
+
+  // });
+  for (var city in json) {
     cities.add(City.fromJson(city));
-  });
+  }
 
   return cities;
 }

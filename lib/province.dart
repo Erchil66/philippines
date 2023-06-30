@@ -1,16 +1,13 @@
-
-
-
 /// A class that defines the basic information about a province.
 class Province {
   /// Unique identifier for a province (e.g `BUL`)
-  String id;
+  String? id;
 
   /// Name of the province (e.g `Bulacan`)
-  String name;
+  String? name;
 
   /// Region where the province belongs to (e.g `III`)
-  String region;
+  String? region;
 
   Province({
     this.id,

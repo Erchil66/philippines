@@ -5,14 +5,17 @@ import 'constants/provinces.dart';
 
 /// Returns a `List` of `Province` objects.
 /// usage: `List<Province> provinces = getProvinces();`
-/// 
+///
 List<Province> getProvinces() {
   List<Province> provinces = [];
 
   final json = jsonDecode(provincesJson);
-  json.forEach((province) {
+  // json.forEach((province) {
+
+  // });
+  for (var province in json) {
     provinces.add(Province.fromJson(province));
-  });
+  }
 
   return provinces;
 }

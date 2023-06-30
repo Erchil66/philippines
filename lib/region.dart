@@ -1,16 +1,13 @@
-
-
 /// A class that defines the basic information about a province.
 class Region {
-
   /// Region code for the region (e.g `I`, `II`, `CAR`)
-  String id;
+  String? id;
 
   /// Name of the region (e.g `Region II`)
-  String name;
+  String? name;
 
   /// Full name of the region (e.g `CALABARZON`)
-  String fullName;
+  String? fullName;
 
   Region({this.id, this.name, this.fullName});
 

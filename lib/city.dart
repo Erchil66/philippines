@@ -1,15 +1,13 @@
-
-
 /// A class that defines the basic information about a city.
 class City {
   /// The name of the city. (e.g `Antipolo`)
-  String name;
+  String? name;
 
   /// A flag where `true` if it is a city, `false` if a municipality
-  bool city;
+  bool? city;
 
   /// The province where the city belongs to. (e.g `RIZ`)
-  String province;
+  String? province;
 
   City({
     this.name,
@@ -20,9 +18,8 @@ class City {
   /// A factory method for parsing the json file to a `City` class.
   factory City.fromJson(Map<String, dynamic> json) {
     return City(
-      name: json['name'],
-      city: json['city'] ?? false,
-      province: json['province']
-    );
+        name: json['name'],
+        city: json['city'] ?? false,
+        province: json['province']);
   }
 }
